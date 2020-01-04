@@ -112,7 +112,7 @@ footer.banner {
     padding: 0 30px;
 }
 
-#assignmentLink {
+#assignmentLink, #home {
     background-image: url('logoIcon.png');
     height: 48px;
     width: 48px;
