@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unit 2</title>
+    <link type="text/css" rel="stylesheet" href="../shared/styles.css" />
+    <script src="quiz.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="banner">
+        <a href="../tma1.html" id="assignmentLink"></a>
+        <ul>
+            <li><a href="../part2">Part 2 Home page</a></li>
+            <li><a href="unit1.html">Unit 1</a></li>
+            <li><a href="unit2.html">Unit 2</a></li>
+            <li><a href="unit3.html">Unit 3</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper center">
+        <h1><u>Unit Two: JavaScript &amp; HTML Canvas</u></h1>
+        <a href="#quizStart">Go to Quiz</a>
+        <h2>JavaScript</h2>
+        <p>With HTML, we can determine the structure and content for web pages.</p>
+        <p>With CSS, we can determine the look of the content for web pages.</p>
+        <p>
+            With Javascript, we can enhance the functionality/appearance of web pages.
+            Despite the name, JavaScript is not the same as Java since one is a scripting language
+            while the latter is object-oriented.
+        </p>
+        <p>Much like CSS, we have three methods of applying JavaScript to our webpages:</p>
+        <ul>
+            <li><label>Inline</label>: <xmp><input type="button" onclick="alert('Hello!')" value="Say Hello!"></xmp>  <input type="button" onclick="alert('Hello!')" value="Say Hello!"></li>
+            <li>
+                <label>Embedded</label>: The code for our JavaScript goes in the "script" tag
+                and is placed in the head or body section of an HTML document
+            </li>
+            <li>
+                <label>External Script</label>: Instead of placing the script tag directly within the HTML document we can save the code in a .js file
+                and add <xmp>
+                    <script src="myScript.js" type="text/javascript"></script>
+                </xmp> to reference the script we want to use
+            </li>
+        </ul>
+        <p>Now that we can add JavaScript to our web pages, let's look at how make scripts.</p>
+        <h2>Common Features/Rules for JavaScript</h2>
+        <ul>
+            <li>
+                <label>Browser's <span class="required">document</span> object</label>:
+                This object represents the HTML document currently displayed in the browser.
+                The document object itself has many helpful methods &amp; attributes like
+                <ul>
+                    <li><strong>writeln</strong> - Adds text to HTML document (May not appear if not proper format)</li>
+                    <li><strong>getElementById</strong> - Like the name says, it returns the element based on the ID provided</li>
+                    <li><strong>getElementsByClassName</strong> - Returns element(s) based on the name of the class provided</li>
+                    <li><strong>getElementsByTagName</strong> - Returns element(s) based on the tag name (i.e. p, span, h1, input, etc).</li>
+                </ul>
+            </li>
+            <li>
+                Each statement SHOULD end with a semicolon (<strong>statement terminator</strong>) but JavaScript does not require them.
+                Also JavaScript is case sensitive.
+            </li>
+            <li>
+                To declare a variable, add the keyword "var" before the name of your variable.
+                (NOTE: We don't need to specify the type for the variable because the JavaScript interpreter will handle that)
+            </li>
+            <li>
+                <label>Strings in JavaScript</label>
+                <ul>
+                    <li>Can use single or double quotes as long as there are matching quotes.</li>
+                    <li>Can concatenate (combine) strings using the + operator. E.g. "H" + "i" becomes "Hi"</li>
+                    <li>
+                        Can also combine mathematical operations with string concatenation.<br />
+                        Caution: <span class="incorrect">"y + 2 = " + y + 2 if y=5 will become "y + 2 = 52"</span> vs.
+                        <span class="correct">"y + 2 = " + (y + 2) if y=5 will become "y + 2 = 7"</span><wbr />
+                        because the calculations/concatenation follow order of operations (BEDMAS).
+                    </li>
+                </ul>
+            </li>
+            <li>JavaScript can perform Addition (+), Subtraction (-), Multiplication (*), Division (/) and Modulo (%, returns remainder)</li>
+            <li>JavaScript supports selection statements (if, if...else, switch) and repetition statements (while, do...while, for, for...in)</li>
+        </ul>
+        <h3>Functions</h3>
+        <p>
+            With functions like many other programming languages, you can reuse code that will be used multiple times to avoid repeating code.
+            The syntax for creating a function is: <xmp class="center" style="display: block;">function myFunction(input){ Code goes here }</xmp>
+        </p>
+        <p>
+            Much like variables, we don't need to specify the type for the input or output parameters since the JavaScript interpreter will handle
+            them.<br />Great, now we can reuse code but can we perform functions when a button is clicked, a dropdown changes value
+            or maybe validate user input?<br />The answer is of course and this can be done using <strong>event handling</strong>
+        </p>
+        <span>To add event handling, there are 2 items we need:</span><br />
+        <ol>
+            <li>
+                Any HTML element such as document, p, input, button or window (element that represents the browser window).<br />
+                To get any element that isn't document or window (both always available), we can use document object's getElement methods to get element(s) we want.
+            </li>
+            <li>
+                Once we have the element we can then add event handling to that element:
+                <xmp class="center" style="display: block;">element.addEventListener(event, function, true value);</xmp>
+                <ul>
+                    <li><label>event</label> would be the type of event that you want to trigger the listener (e.g. change, click, load, blur, keyup, etc)</li>
+                    <li><label>function</label> is the function that runs when the event is detected</li>
+                    <li><label>true value</label> typically is false (value deals with how events are handled based on DOM tree)</li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            JavaScript also provides some objects that can assist in improving the functionality of your webpages.
+            Each object has its own attributes and methods (difference between methods and functions
+            is that methods require the name of its object followed by the invocation of the method).
+        </p>
+        <ul>
+            <li><label>Math object</label> performs common mathematical calculations (e.g. Math.pow(2,3) = 2<sup>3</sup>)</li>
+            <li><label>String object</label> deals with series of characters treated as a single unit</li>
+            <li><label>Date object</label> handles date and time manipulations (e.g. getDate method will return the day of the month)</li>
+            <li>And many more!</li>
+        </ul>
+        <h2>Introduction to <strong>canvas</strong></h2>
+        <p>
+            The HTML canvas element allows you to draw 2D graphics/animations, font/image manipulation and inserting images/videos onto this element.
+            The benefit of using canvas is that it's built into the browser so no plug-ins are needed.<br />
+            To draw on the canvas, we need to understand the coordinate system it follows
+        </p>
+        <ul>
+            <li>Origin (0, 0) is at the top-left corner of the canvas</li>
+            <li>X-axis increases positively to the right of the screen</li>
+            <li>Y-axis increases positively towards the bottom of the screen</li>
+        </ul>
+        <p>Lets look at an example of using the canvas to draw a simple rectangle</p>
+        <canvas class="center" id="canvasID" style="border: 1px solid black;"></canvas>
+        <script>
+            var canvas = document.getElementById('canvasID');
+            var context = canvas.getContext('2d');
+            context.fillStyle = "red";
+            context.fillRect(10, 10, 200, 100);
+            context.strokeStyle = "green";
+            context.lineWidth = "4";
+            context.strokeRect(9, 9, 201, 101);
+        </script>
+        <p>
+            To see the code for this example, you can use the browser's Developer Tools to inspect the canvas element
+            and the embedded script that draws on the canvas. You can find many tutorials online that show how capable the canvas can be used.
+        </p>
+        <p>This concludes the Unit Two Tutorial. Click the button below to start the quiz.</p>
+        <button id="quizStart" value="quiz2" onclick="loadQuiz(this)">Start Quiz 2</button>
+        <br /><br />
+        <form id="quizForm" action="javascript:;" onsubmit="markQuiz(this)"></form>
+
+    </div>
+    <footer class="banner"></footer>
+</body>
+</html>

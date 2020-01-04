@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type = "text/xsl" href = "resume.xslt"?>
+<resume>
+  
+  <header>
+    <name>Jacob Wong</name>
+    <address>
+      <street>11826 10A Avenue NW</street>
+      <city>Edmonton</city>
+      <province>Alberta</province>
+      <postalcode>T6J 7A7</postalcode>
+    </address>
+    <contact>
+      <homephone>780-432-1221</homephone>
+      <cellphone>780-266-4158</cellphone>
+      <email>jdw2@ualberta.ca</email>
+    </contact>
+  </header>
+
+  <education>
+    <degree>
+      <institution>University of Alberta</institution>
+      <discipline>Software Engineering</discipline>
+      <type>BSc</type>
+      <gpa>3.2</gpa>
+      <graduationclass>2021</graduationclass>
+    </degree>
+  </education>
+  <computerexperience>
+    <languages>
+      <language>C++</language>
+      <language>Python</language>
+      <language>Java</language>
+      <language>HTML</language>
+      <language>CSS</language>
+      <language>JavaScript</language>
+      <language>SQL</language>
+    </languages>
+    <programs>
+      <program>Microsoft Office Word, Excel</program>
+      <program>MatLab</program>
+      <program>LoggerPro</program>
+    </programs>
+  </computerexperience>
+
+  <workexperience>
+    <job>
+      <company>Visual Antidote</company>
+      <location>Toronto, ON</location>
+      <startdate>May 2018</startdate>
+      <enddate>August 2018</enddate>
+      <position>Software Developer and Tester</position>
+      <tasks>
+        <task>Evaluated code for errors and performed quality assurance for different projects which uses Sonic Forms and iMIS</task>
+        <task>Assisted with development of company’s internal support and development-tracking system</task>
+        <task>Designed and developed forms for an international organization’s financial reporting system</task>
+        <task>Led development in a roster manager project involving IQAs and webpage branching logic</task>
+      </tasks>
+    </job>
+    <job>
+      <company>Sun Café at Derrick Golf and Winter Club</company>
+      <location>Edmonton, AB</location>
+      <startdate>October 2014</startdate>
+      <enddate>May 2018</enddate>
+      <position>Server</position>
+      <tasks>
+        <task>Ensured customer satisfaction by communicating their preferences with the kitchen staff</task>
+        <task>Maintained restaurant cleanliness with thorough cleaning of over twenty tables</task>
+        <task>Entrusted with organizing and delivering food for Sun Café and Member’s Lounge when restaurants had over 100 customers</task>
+      </tasks>
+    </job>
+  </workexperience>
+
+  <generalinfo>
+    <competitionexperience>
+      <event>Participated in HackedBeta 2017 and HackED 2018</event>
+      <event>Competed and won third place in ENCMP 100 Programming Contest, 2017</event>
+      <event>Culinary competitor for Harry Ainlay high school, 2014-2016</event>
+    </competitionexperience>
+    <hobbies>
+      <hobby>Cooking</hobby>
+      <hobby>Piano</hobby>
+      <hobby>Volleyball</hobby>
+      <hobby>Hockey</hobby>
+      <hobby>Badminton</hobby>
+    </hobbies>
+  </generalinfo>
+</resume>

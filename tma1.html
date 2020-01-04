@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TMA1</title>
+    <link type="text/css" rel="stylesheet" href="shared/styles.css" />
+</head>
+<body>
+    <nav class="banner">
+        <a href="tma1.html" id="assignmentLink"></a>
+        <ul>
+            <li><a href="part1/resume.xml">Part 1</a></li>
+            <li><a href="part2">Part 2</a></li>
+            <li><a href="part3">Part 3</a></li>
+            <li><a href="part4">Part 4</a></li>
+        </ul>
+    </nav>
+    <h1>COMP 466 - Adv Tech for Web-Based Systems</h1>
+    <p>Assignment #1</p>
+    <h2>Original Description and Requirements</h2>
+    <ul>
+        <li>
+            <a href="part1/resume.xml">Part 1</a>: Create an XML version of your resume
+            containing at least three sections: general information about you;
+            your educational background, and your work experience.
+            Create a schema for the XML document, and then create an XSLT for the XML document so that it can be rendered in a browser.
+        </li>
+        <li>
+            <a href="part2">Part 2</a>: Write a web application that can teach people Unit 1, Unit 2, or Unit 3 of the course
+            <ol>
+                <li>It must be a web-based system with a name you choose, a banner to show off your work, navigation menus and buttons. It should begin with a welcome page to greet the users, to explain what the application does, and what they get from it, and how they should proceed.</li>
+                <li>The application must have three pages of tutorials, accessible through navigation menus or buttons, to teach the technologies covered in Unit 1, Unit 2 and Unit 3 respectively. You don’t need to teach everything, but there should be enough content to make each of the tutorials useful.</li>
+                <li>There should be a quiz for each tutorial, which can be accessed right after the tutorial page, as well as through the navigation menus and buttons of the system.</li>
+                <li>After the submission button is hit, the quiz system should be able to grade the answers the learner has provided, show the correct answers as well as the score in percentage.</li>
+                <li>The quiz system should be designed so that questions can be easily edited, added, or deleted, and new quiz can be easily created.</li>
+                <li>You should do your best to use the web technologies covered in Unit 1, unit 2 and Unit 3, including HTML5, CSS3, JavaScript, XML and Ajax.</li>
+                <li>Your web application should use or teach at least five page-structure elements and six new input types</li>
+                <li>You should use an external style sheet for all pages of the system, to retain a consistent and user-friendly interface for your system.</li>
+                <li>When using HTML5 table, be sure that you only use it to display tabular information, not to lay out the elements on your page.</li>
+            </ol>
+        </li>
+        <li>
+            <a href="part3">Part 3</a>: For this project, you are required to create a slideshow web application using HTML5 canvas and other web technologies you have learned so far. The requirements are as follows:
+            <ol>
+                <li>The slideshow should be drawn on the canvas</li>
+                <li>There should be a caption for each image in the show</li>
+                <li>There should be a button to start/stop the show</li>
+                <li>There should be a control to toggle the show between random and sequential</li>
+                <li>There should be buttons to manually turn the show backward or forward, only if the show is in sequential mode</li>
+                <li>There should be a dropdown list for users to select different transition/transformation effects for the show</li>
+                <li>The data of the images should be in a JSON array so that images and their captions can be easily maintained</li>
+                <li>To avoid copyright issues, you should use the images/photos you took. If you don’t have the images ready, please go around the place you live or work and take some good ones</li>
+                <li>The show should have at least 20 nice pictures.</li>
+            </ol>
+        </li>
+        <li>
+            <a href="part4">Part 4</a>: For this project, you are required to develop a web application that can provide users with the following utility tools:
+            <ul>
+                <li>Measurement converters: weights, lengths, areas, and volumes</li>
+                <li>A mortgage calculator</li>
+                <li>A utility tool that you think could be useful. You may need to do some research on the Web to build this last tool, and in the report you need to justify why you think it will be useful.</li>
+            </ul>
+            In order to get full marks for the above design and implementation, the following are required:
+            <ol>
+                <li>It must have an integrated and user-friendly interface for users to access each of the tools you designed.</li>
+                <li>You need to use JavaScript functions and built-in objects to implement the application.</li>
+                <li>At any time only one tool will be shown, to ensure a clean and tidy space for users to work with.</li>
+                <li>You need to use Ajax technologies to eliminate whole page update when switching from one utility to another.</li>
+                <li>You need to use event handler to calculate and show the result as soon as the user has given enough input to the system.</li>
+                <li>In the assignment report, you need to provide sufficient documentation for your work, including algorithms and formulas used for the tools. If you have used any resources, including documents on the Web, you must clearly identify the source in your documentation.</li>
+            </ol>
+        </li>
+    </ul>
+    <h2>Interpretation &amp; Implementation</h2>
+    <ol>
+        <li><b><u>Part 1</u></b>: The requirements were pretty straight-forward so I simply looked at my resume and converted what I could to XML format first then 
+        completed the XSLT by trying to format the same way that my resume looked.</li>
+        <li><b><u>Part 2</u></b>: I started by using the notes I had made about all the Units so far and took the content I needed to start making my tutorial in HTML and CSS.
+        Then when I finished putting the content in for Unit 1 I made my quiz JavaScript that would load/mark the questions using Ajax to get the XML that stored my quiz.
+        I made my script generic so that any quiz could use the script without having to change it. Because the description said to use HTML, CSS, JS, XML and Ajax,
+        using HTML, CSS and JS for their purposes in this part were straight forward. Since the requirements suggested to use XML and Ajax, my assumption was that the quiz material
+        should be stored in XML and retrieved using Ajax so that the "sensitive" material (correct answers) could not be easily found in HTML. This part of the assignment
+        was definetly one of the more time-consuming parts in terms of typing/filtering the material for each tutorial.
+        </li>
+        <li><b><u>Part 3</u></b>: Requirements were not too complicated which was to create a slideshow using the canvas element. I added
+        functionality for a manual/automatic progression of the images and disable the buttons during transitions so that there werem't undesired
+        changes during the transition effects. I had some issues with the setInterval method causing infinite loops because intervals were being created 
+        faster than my images could be loaded in. To solve this issue I used the setTimeout method which is the same as setInterval except runs once and
+        I set the timeout at the end of each change on the transition as long as the exit conditions weren't true. Another issue I encountered during
+        the development of this part was that on some browsers/computers, the images would "flicker" or start the transition before loading the next image. 
+        My fixes for this were to
+        <ul>
+            <li>Use a second Image object that would load the next image and would only run the transition once the next image was loaded</li>
+            <li>Resize my images to be the same length and width so that I would not have to resize each image</li>
+            <li>By resizing it reduced the size of the image that needed to be loaded (MB to kB)</li>
+        </ul>
+        </li>
+        <li><b><u>Part 4</u></b>: For the measurement converters, I used the calculations <a href="https://metricunitconversion.globefeed.com/">here</a> and I made the decision to display all 4 measurements available
+        at the same time so that the user can use any of the necessary measurements they need. Also I chose to allow conversion between 2 units because most people only care about converting
+        from what they have to what they need.<br/> Then for the mortgage calculator, I used the formula <a href="https://www.wikihow.com/Calculate-Mortgage-Payments">here</a> to calculate the mortgage.
+        This calculator has no complicated logic in that the user simply enters in 4 values and they will get their mortgage and the total interest they have to pay.
+        The formula for this calculator uses the built-in Math object to perform the necessary operations.<br/> Finally for the utility tool of my choosing, I decided to make an accumulated depreciation calculator
+        for property, plant and equipment. This calculation was part of an accounting course I took and is an important calculation for accountants. A basic explanation of what accumulated depreciation (AD) is when
+        a company has a vehicle for example, its value decreases as it is in use and AD is to determine how much that vehicle depreciates in value per year. The 2 methods to calculate it is
+        the Straight-Line method and Double-decling method. Here are the following formulas I used: <xmp>SL Depreciation Expense = (Cost of PPE - Estimated Residual Value)/Estimated Useful Life (Years)</xmp> &amp;<br/>
+        <xmp>DD Dep Expense = Current Starting Carrying Amount x (2 / Estimated Useful Life (Years))</xmp> &amp; <br/>
+        <xmp>*Ending Carrying Amount = Starting Carrying Amount - Depreciation Expense</xmp>. One of the rules for these calclations is that the Carrying Amount can not be 
+        less than the Estimated Residual Value (value that you would sell the vehicle for at the end of its useful life). For the Straight-line method, it will always end up having an
+        ending carrying amount equal to the residual value. For the Double-declining method, there is a potential that the depreciation expense when subtracted would cause this rule to fail. For example,
+        if we had a Dep Exp = 2000, Starting CA = 4000, and Residual = 3000 then the Ending CA would fail this rule. The proper calculation is to use <xmp>Depreciation Expense = Starting CA - Residual</xmp> when 
+        * formula is not valid (i.e. the rule above is false). For some documentation on this process see <a href="https://www.thebalance.com/straight-line-depreciation-method-357598">Straight-line</a> or
+        <a href="https://www.accountingtools.com/articles/2017/5/17/double-declining-balance-depreciation">Double-declining</a> (Note: The double declining method online uses a slightly different formula than what I learned
+        from the accounting course but should explain the steps)</li>
+    </ol>
+    <h2>Steps to run the code</h2>
+    <ol>
+        <li>Download and Setup a local host using XAMPP (see documentation <a href="https://pureinfotech.com/install-xampp-windows-10/">here</a>). For me, the default port for the localhost
+        was already in use so I changed the default port for Apache to 8088 (can be any open port).</li>
+        <li>Unzip and place the TMA1 folder under the htdocs folder (this path assuming you followed the default installation for XAMPP "C:\xampp\htdocs")</li>
+        <li>Then type in "localhost:8088/TMA1/tma1.html" assuming you are using port 8088 otherwise change it to the port you are using or you can just put localhost/TMA1/tma1.html
+        if you do not change the default port in step 1.</li>
+        <li>You can then navigate to each part using the links above or using the links in the header menu. To navigate back to the home page (this page), click the globe in the upper-left 
+        corner</li>
+    </ol>
+    <footer class="banner"><span>App icons by <a href="https://icons8.com/">icons8</a>.</span></footer>
+</body>
+</html>

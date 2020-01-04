@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question>
+    <questiontext>What does HTTP stand for?</questiontext>
+    <answer letter="a">How To Try Programming</answer>
+    <answer letter="b" correct="1">Hypertext Transfer Protocol</answer>
+    <answer letter="c">Hyper Triangle Trapezoid Process</answer>
+    <answer letter="d">Hypertext Transfer Process</answer>
+  </question>
+  <question>
+    <questiontext>What code is returned when the server is able to find a requested resource?</questiontext>
+    <answer letter="a">1</answer>
+    <answer letter="b">404</answer>
+    <answer letter="c" correct="1">200</answer>
+    <answer letter="d">Found</answer>
+  </question>
+  <question>
+    <questiontext>What does HTML stand for?</questiontext>
+    <answer letter="a">How To Make Lasagna</answer>
+    <answer letter="b">Hypertext Makeup Language</answer>
+    <answer letter="c">Happy Typing My Language</answer>
+    <answer letter="d" correct ="1">Hypertext Markup Language</answer>
+  </question>
+  <question>
+    <questiontext>What is an element in HTML?</questiontext>
+    <answer letter="a">Style that is applied to text</answer>
+    <answer letter="b">Either Water, Earth, Fire or Air </answer>
+    <answer letter="c">Text displayed on a web page</answer>
+    <answer letter="d" correct ="1">None of the Above</answer>
+  </question>
+  <question>
+    <questiontext>What does CSS stand for?</questiontext>
+    <answer letter="a" correct="1">Cascading Style Sheets</answer>
+    <answer letter="b">Can Salt Sweeten</answer>
+    <answer letter="c">Cascade Style Store</answer>
+    <answer letter="d">Cascading Sheet Style</answer>
+  </question>
+    <question>
+    <questiontext>How do I apply CSS rules to an ID, class, and element?</questiontext>
+    <answer letter="a">Add no prefix, "." and "#" respectively</answer>
+    <answer letter="b" correct="1">Add "#", "." and no prefix respectively</answer>
+    <answer letter="c">Add ".", "#" and no prefix respectively</answer>
+    <answer letter="d">Add @ID, @Class and @Element respectively</answer>
+  </question>
+</questions>

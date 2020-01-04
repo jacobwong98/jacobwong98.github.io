@@ -1,0 +1,34 @@
+﻿<h2>Accumulated Depreciation Calculator</h2>
+<p>This tool helps accountants calculate the accumulated depreciation of property, plant and equipment
+    (PPE) using 2 methods: straight-line method and double-declining balance method</p>
+<label><span class="required">*</span>Cost of PPE: </label><input id="costInput" type="number" min="0.01"
+    step="0.01" /><br />
+<label><span class="required">*</span>Estimated Residual Value: </label><input id="resVal" type="number" min="0"
+    step="0.01" /><span id="costLTRes"></span><br />
+<label><span class="required">*</span>Estimated Useful Life (Years): </label><input id="useYears" type="number" min="1"
+    step="1" max="25"/>
+<h3>Results</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="3">Straight-Line Method</th>
+            <th colspan="3">Double-Declining Method</th>
+        </tr>
+        <tr>
+            <th>Year</th>
+            <th>Starting Carrying Amount</th>
+            <th>Depreciation Expense</th>
+            <th>Ending Carrying Amount</th>
+            <th>Starting Carrying Amount</th>
+            <th>Depreciation Expense</th>
+            <th>Ending Carrying Amount</th>
+        </tr>
+    </thead>
+    <tbody id="tempTable">
+        <tr>
+            <td colspan="7" class="center required">More Information is required.</td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,14 @@
+﻿<h2>Mortgage Calculator</h2>
+<label>Mortgage Amount: </label><input id="mortAmt" type="number" min="0" /><br/>
+<label>Mortgage Length (Years): </label><input id="mortLength" type="number" min="0" step="1" /><br/>
+<label>Payment Frequency: </label>
+<select id="payFreq">
+    <option value="m">Monthly</option>
+    <option value="biw">Bi-Weekly</option>
+    <option value="w">Weekly</option>
+</select><br/>
+<label>Annual Interest Rate (%): </label><input id="intRate" type="number" min="0" step="any" /><br/>
+
+<h3>Mortgage Information</h3>
+<label>Payments: </label><strong id="payments"></strong><br />
+<label>Total Interest: </label><strong id="totalInt"></strong>

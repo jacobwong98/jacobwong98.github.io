@@ -1,0 +1,89 @@
+﻿
+<h2>Measurement Converter</h2>
+<!--<span>Select the option measurement you wish to convert: </span>
+<select id="measurements">
+<option>Weight</option>
+<option>Length</option>
+<option>Area</option>
+<option>Volume</option>
+</select>-->
+<h3>Weight Converter</h3>
+<div id="convertWeight">
+    <label>Convert this value: </label><input id="origWeight" type="number" min="0" pattern="^\d*(\.\d{0,2})?$" />
+    <select id="origWeightUnit" class="units">
+        <option>Grams</option>
+        <option>Kilograms</option>
+        <option>Pounds</option>
+        <option>Ounces</option>
+        <option>Tonnes</option>
+    </select><br />
+    <label>New Weight: </label><input id="newWeight" type="number" readonly />
+    <select id="newWeightUnit" class="units">
+        <option>Grams</option>
+        <option>Kilograms</option>
+        <option>Pounds</option>
+        <option>Ounces</option>
+        <option>Tonnes</option>
+    </select>
+</div>
+<h3>Length Converter</h3>
+<div id="convertLength">
+    <label>Convert this value: </label><input id="origLength" type="number" min="0" pattern="^\d*(\.\d{0,2})?$" />
+    <select id="origLengthUnit" class="units">
+        <option>Kilometeres</option>
+        <option>Meteres</option>
+        <option>Centimeteres</option>
+        <option>Inches</option>
+        <option>Feet</option>
+        <option>Miles</option>
+    </select><br />
+    <label>New Length: </label><input id="newLength" type="number" readonly />
+    <select id="newLengthUnit" class="units">
+        <option>Kilometeres</option>
+        <option>Meteres</option>
+        <option>Centimeteres</option>
+        <option>Inches</option>
+        <option>Feet</option>
+        <option>Miles</option>
+    </select>
+</div>
+<h3>Area Converter</h3>
+<div id="convertArea">
+    <label>Convert this value: </label><input id="origArea" type="number" min="0" pattern="^\d*(\.\d{0,2})?$" />
+    <select id="origAreaUnit" class="units">
+        <option>Square Meteres</option>
+        <option>Square Miles</option>
+        <option>Square Feet</option>
+        <option>Square Inches</option>
+        <option>Acre</option>
+    </select><br />
+    <label>New Area: </label><input id="newArea" type="number" readonly />
+    <select id="newAreaUnit" class="units">
+        <option>Square Meteres</option>
+        <option>Square Miles</option>
+        <option>Square Feet</option>
+        <option>Square Inches</option>
+        <option>Acre</option>
+    </select>
+</div>
+<h3>Volume Converter</h3>
+<div id="convertVolume">
+    <label>Convert this value: </label><input id="origVolume" type="number" min="0" pattern="^\d*(\.\d{0,2})?$" />
+    <select id="origVolumeUnit" class="units">
+        <option>Cubic Meteres</option>
+        <option>Literes</option>
+        <option>Cubic Inches</option>
+        <option>Pints</option>
+        <option>Quarts</option>
+        <option>Gallons</option>
+    </select><br />
+    <label>New Volume: </label><input id="newVolume" type="number" readonly />
+    <select id="newVolumeUnit" class="units">
+        <option>Cubic Meteres</option>
+        <option>Literes</option>
+        <option>Cubic Inches</option>
+        <option>Pints</option>
+        <option>Quarts</option>
+        <option>Gallons</option>
+    </select>
+</div>

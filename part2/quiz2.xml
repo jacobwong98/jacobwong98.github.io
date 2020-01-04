@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question>
+    <questiontext>What is JavaScript used for?</questiontext>
+    <answer letter="a">Enhance functionality and appearance of web servers</answer>
+    <answer letter="b">Enhance functionality and appearance of spider-web</answer>
+    <answer letter="c" correct="1">Enhance functionality and appearance of web pages</answer>
+    <answer letter="d">None of the Above</answer>
+  </question>
+  <question>
+    <questiontext>How can we find an element based on its ID</questiontext>
+    <answer letter="a">document.getElementsById</answer>
+    <answer letter="b">getElementsByTagName</answer>
+    <answer letter="c">window.getElementById</answer>
+    <answer letter="d" correct="1">document.getElementById</answer>
+  </question>
+  <question>
+    <questiontext>What is result for "2" + x + (y + z) where x=1, y=3, x=2?</questiontext>
+    <answer letter="a" correct ="1">215</answer>
+    <answer letter="b">8</answer>
+    <answer letter="c">26</answer>
+    <answer letter="d">Potato</answer>
+  </question>
+  <question>
+    <questiontext>What is the semi-colon called in JavaScript?</questiontext>
+    <answer letter="a">Semi-colon</answer>
+    <answer letter="b">Statement Schwarzenegger</answer>
+    <answer letter="c">End of File</answer>
+    <answer letter="d" correct ="1">None of the Above</answer>
+  </question>
+  <question>
+    <questiontext>Name the input parameters for the addEventListener method</questiontext>
+    <answer letter="a">listener, function, false</answer>
+    <answer letter="b" correct="1">event, function, true value</answer>
+    <answer letter="c">event, function</answer>
+    <answer letter="d">function, true value</answer>
+  </question>
+  <question>
+    <questiontext>How do we draw a filled rectangle on the canvas element?</questiontext>
+    <answer letter="a">Save an image of a rectangle, Print it out then tape it onto the screen</answer>
+    <answer letter="b" correct="1">context.fillRect</answer>
+    <answer letter="c">context.drawRect</answer>
+    <answer letter="d">Ask a graphic designer to do it</answer>
+  </question>
+</questions>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question>
+    <questiontext>What does XML stand for?</questiontext>
+    <answer letter="a">Xternal Markup Language</answer>
+    <answer letter="b" correct="1">Extensible Markup Language</answer>
+    <answer letter="c" >External Masking Language</answer>
+    <answer letter="d">X Marks Loot</answer>
+  </question>
+  <question>
+    <questiontext>How can we determine the difference between elements with the same name</questiontext>
+    <answer letter="a">Labels</answer>
+    <answer letter="b">By the root element</answer>
+    <answer letter="c">The context relative to other elements</answer>
+    <answer letter="d" correct="1">Namespace</answer>
+  </question>
+  <question>
+    <questiontext>What do DTDs and schemas have in common</questiontext>
+    <answer letter="a">Specify element type/attributes</answer>
+    <answer letter="b">Helps parser verify XML is valid</answer>
+    <answer letter="c" correct ="1">All of the above</answer>
+    <answer letter="d">None of the above</answer>
+  </question>
+  <question>
+    <questiontext>What does XSl do?</questiontext>
+    <answer letter="a" correct ="1">Converts XML into browser-friendly content</answer>
+    <answer letter="b">Styles an XML document</answer>
+    <answer letter="c">Tabulates data</answer>
+    <answer letter="d">None of the Above</answer>
+  </question>
+  <question>
+    <questiontext>What object does Ajax use to make requests</questiontext>
+    <answer letter="a">JavaScript and XML</answer>
+    <answer letter="b" correct="1">XMLHTTPRequest</answer>
+    <answer letter="c">HTTPRequest</answer>
+    <answer letter="d">AjaxCall</answer>
+  </question>
+</questions>

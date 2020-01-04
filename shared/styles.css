@@ -1,0 +1,213 @@
+﻿/*General Rules*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+a:active {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #5575A8;
+}
+
+label {
+    color: #566282;
+}
+
+p, span, li, section, select,
+article, aside {
+    color: #818283;
+}
+
+button {
+    background-color: #5CAFC7;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:-moz-read-only { /* For Firefox */
+    border: none;
+}
+
+input:read-only {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:#6BAC9F;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+.correct {
+    color: green;
+}
+
+.required, .incorrect {
+    color : red;
+}
+
+table .required {
+    background-color: #f77e7e;
+    color: red;
+}
+
+/*Banner related Rules*/
+.banner {
+    display: block;
+    background-color: #142555;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+
+footer.banner {
+    margin-top: 80px;
+}
+
+.banner ul {
+    list-style: none;
+}
+
+.banner  a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.banner ul {
+    margin: 0;
+    float: right;
+}
+
+.banner ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+#assignmentLink {
+    background-image: url('logoIcon.png');
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+
+}
+
+
+/*CSS for Part 2*/
+div.wrapper {
+    width: 75%;
+    text-align: left;
+}
+
+ul.inputEx {
+    width: 400px;
+}
+
+ul.inputEx li {
+    margin:5px 0
+}
+
+ul.inputEx li input {
+    float: right;
+}
+
+xmp {
+    display: inline;
+}
+
+button[type=submit] {
+    margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+    #canvasID {
+        margin-left: 35%;
+    }
+}
+
+/*CSS for Part 3*/
+#nextImage {
+    background-image: url('../part3/Images/rightarrow.png');
+
+}
+
+#prevImage {
+    background-image: url('../part3/Images/leftarrow.png');
+
+}
+
+#playImage {
+    background-image: url('../part3/Images/playbutton.png');
+
+}
+
+#shuffleIcon {
+    background-image: url('../part3/Images/shuffleIcon.png');
+
+}
+
+/*.buttons{
+    display:block;
+    position:absolute;
+    top:0;
+    right: 540px;
+}*/
+
+.buttons > div {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+/*#selectWrapper {
+    position: absolute;
+    top: 55px;
+    right: 540px;
+}
+
+#canvasWrapper {
+    position: relative;
+    margin-left: 2px;
+}*/
+
+/*CSS for Part 4*/
+.tools input,
+.tools select,
+button {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tools label {
+    font-size: 20px
+}
